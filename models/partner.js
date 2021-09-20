@@ -6,10 +6,9 @@ const partnerSchema = new Schema(
     name: {
       type: String,
       required: true,
-      unique: true,
     },
     image: {
-      type: Image,
+      type: String,
       required: true,
     },
     featured: {

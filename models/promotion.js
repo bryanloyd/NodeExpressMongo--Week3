@@ -9,10 +9,9 @@ const promotionSchema = new Schema(
     name: {
       type: String,
       required: true,
-      unique: true,
     },
     image: {
-      type: Image,
+      type: String,
       required: true,
     },
     featured: {
@@ -34,6 +33,6 @@ const promotionSchema = new Schema(
   }
 );
 
-const Promotion = mongoose.model("Promotion", promotionSchema);
+var Promotion = mongoose.model("Promotion", promotionSchema);
 
 module.exports = Promotion;
